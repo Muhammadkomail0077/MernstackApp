@@ -4,10 +4,9 @@ import { createTransport } from "nodemailer"
 
 export const getDataUri = (file) => {
     const parser = new DataUriParser();
-    const extName = path.extname("file.orignalname").toString()
+    const extName = path.extname("file.originalname").toString(); // Corrected line
     return parser.format(extName, file.buffer);
-}
-
+};
 
 export const sendToken = (user, res, message, statusCode) => {
     const token = user.generateToken();

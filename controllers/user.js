@@ -17,18 +17,20 @@ export const login = asyncError(async (req, res, next) => {
     if (!password) return next(new ErrorHandler("Please Enter Password", 400))
 
     else {
-        return next(new ErrorHandler("Incorrect Email or Password", 400))
+        return next(new  ("Incorrect Email or Password", 400))
     }
 
 })
+
+
+
 export const signUp = asyncError(async (req, res, next) => {
 
     const { name, email, password, address, city, country, pincode } = req.body;
 
     // req.file
 
-    const file = getDataUri(req.file)
-
+    const file = getDataUri(req.file);
 
     // Add Cloudinary here
 
