@@ -22,8 +22,6 @@ export const login = asyncError(async (req, res, next) => {
 
 })
 
-
-
 export const signUp = asyncError(async (req, res, next) => {
 
     const { name, email, password, address, city, country, pincode } = req.body;

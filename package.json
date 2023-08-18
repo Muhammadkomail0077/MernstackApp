@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "Set NODE_ENV=Development&& nodemon server.js",
     "start": "Set NODE_ENV=Production&& node server.js",
-    "build": "npm init -y"
+    "build": "npm run build"
   },
   "author": "",
   "license": "ISC",
